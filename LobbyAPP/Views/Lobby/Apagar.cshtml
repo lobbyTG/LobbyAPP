@@ -1,0 +1,16 @@
+﻿@model LobbyModel
+@{
+    ViewData["Title"] = "Confirmação de apagar o Lobby";
+}
+
+<div class="text-center">
+
+    <h3>Realmente deseja apagar o Lobby (@Model.Quadra)?</h3>
+
+</div>
+
+<div class="d-grid gap-2">
+<a class="btn btn-primary" role="button" asp-controller="Lobby" asp-action="Index">Cancelar exclusão</a>
+<a class="btn btn-danger" role="button" asp-controller="Lobby" asp-action="Apagar">Confirmar exclusão</a>
+
+</div>
