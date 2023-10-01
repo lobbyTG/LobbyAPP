@@ -14,16 +14,19 @@
     <div class="form-group">
         <label for="quadra">Quadra</label>
         <input type="text" asp-for="Quadra" class="form-control" placeholder="Digite o nome da quadra">
+        @Html.ValidationMessageFor(x => x.Quadra)
     </div>
 
     <div class="form-group">
         <label for="endereco">Endereço</label>
         <input type="text" asp-for="Endereco" class="form-control" placeholder="Digite o endereço">
+         @Html.ValidationMessageFor(x => x.Endereco)
     </div>
 
     <div class="form-group">
         <label for="modalidades">Modalidades</label>
         <input type="text" asp-for="Modalidades" class="form-control" placeholder="Digite as modalidades disponíveis">
+         @Html.ValidationMessageFor(x => x.Modalidades) 
     </div>
 
     <br />

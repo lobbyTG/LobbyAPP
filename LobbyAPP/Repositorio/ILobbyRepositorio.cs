@@ -10,6 +10,10 @@ namespace LobbyAPP.Repositorio
         LobbyModel Adicionar(LobbyModel lobby);
         LobbyModel Atualizar(LobbyModel lobby);
 
+        bool ApagarConfirmacao(int id);
+
+
+
 
     }
 }

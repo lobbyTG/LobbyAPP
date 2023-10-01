@@ -46,5 +46,18 @@ namespace LobbyAPP.Repositorio
 
             return lobbyDB;
         }
+
+        public bool ApagarConfirmacao(int id)
+        {
+            LobbyModel lobbyDB = ListarPorId(id);
+
+            if (lobbyDB == null) throw new System.Exception("Houve um erro na deleção do lobby!");
+
+            _bancoContext.Lobbys.Remove(lobbyDB);
+            _bancoContext.SaveChanges();
+
+            return true;
+
+        }
     }
 }
